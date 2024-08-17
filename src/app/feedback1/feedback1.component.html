@@ -1,0 +1,44 @@
+<form name="feedback_form" id="feedback_form" method="post" #myform="ngForm" (ngSubmit)="saveForm(myform.value)">
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3" ngModel>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword3" ngModel>
+      </div>
+    </div>
+    <fieldset class="row mb-3">
+      <legend class="col-form-label col-sm-2 pt-0">Rating</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked ngModel>
+          <label class="form-check-label" for="gridRadios1">
+            Execellent
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"ngModel>
+          <label class="form-check-label" for="gridRadios2">
+            Good
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled ngModel>
+          <label class="form-check-label" for="gridRadios3">
+            Worst
+          </label>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Comment</legend>
+      <div class="col-sm-10 offset-sm-2">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Comment input" ngModel>
+          </div>
+    </fieldset>
+    <input type="submit" class="btn btn-primary"value="submit">
+  </form>

@@ -1,0 +1,25 @@
+.header{
+    border:1px blueviolet solid;
+    height: 200px;
+    width:"100%";
+    background-color: #19b893;
+}
+.name{
+    display:inline;
+    position:absolute;
+    margin-left:250px;
+}
+.total{
+    display:inline;
+    position:relative;
+    margin-left:700px;
+    margin-top:400px;
+    margin-bottom: 100px;
+}
+.date{
+    display:inline;
+    position:relative;
+    margin-left:50px;
+    margin-top:400px;
+    margin-bottom: 100px;
+}
